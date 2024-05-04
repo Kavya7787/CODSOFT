@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            background-color: orange;
+            background: url(images/marcus-wallis-mUtQXjjLPbw-unsplash.jpg);
+            background-size: 700px 700px;
+            font-family: Georgia, 'Times New Roman', Times, serif;  
+            color: white;     
+        }
+        #sports {
+            display: flex;
+        }
+        #logo {
+            width: 40px;
+            height:40px;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+        .sport {
+            padding-left: 5px;
+        }
+        .Home {
+            padding-left: 500px;
+            padding-top: 30px;
+        }
+        .About {
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+        .signup {
+            margin-left: 30px;
+            width: 120px;
+            height: 30px;
+            background-color: darkgray;
+            border-radius: 5px;
+            color: white;
+            border: white;
+            margin-top: 20px;
+            font-size: 20px;
+            padding: 5px;
+        }
+        .landing {
+            text-align: center;
+            padding-top: 30px;
+        }
+        .change {
+            color: rgb(255, 0, 119);
+        }
+        .welcome {
+            color: gray;
+        }
+        .magic {
+            font-size: 20px;
+        }
+        #Us {
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+        }
+        .organization {
+        padding-left: 200px;
+        font-size: 20px;
+        }
+        .cricket {
+        padding-left: 200px;
+        font-size: 20px;
+        width: 800px;
+        color: white;
+        }
+        .container {
+        max-width: 400px;
+        margin-top: 50px;
+        margin-left: 450px;
+        padding: 20px;
+        border: 2px solid white;
+        border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width:80%;
+            padding: 8px;
+            border: 2px solid white;
+            border-radius: 3px;
+        }
+        button {
+            padding:10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .mission {
+            color: white;
+            text-align: center;
+            padding-top: 30px;
+        }
+        .footer {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="sports">
+        <img src="images/cricket.jpg" alt="" id="logo">
+        <h2 class="sport">cricketZone</h2>
+        <a href="#logo" class="Home">Home</a>
+        <a href="#Us" class="About">About Us</a>
+        <a href="#sign-up" class="signup">Sign Up</a>
+    </div>   
+    <header class="landing">
+        <h1 class="welcome">Welcome to our <span class="change">sports</span> Landing Page</h1>
+        <p class="magic">Discover the magic of this page!</p>
+    </header>
+    <h1 id="Us">About Us</h1>
+    <p class="organization">Welcome to cricketZone organization, where cricket is more than just a sport it's a passion!</p>
+    <p class="cricket">At cricketZone organization, we are dedicated to promoting the love and excitement of cricket to fans all around the globe. Whether you're a seasoned player, an enthusiastic fan, or someone new to sport, we're here to cater to all your cricketing needs.</p>
+    <div class="container" id="signup-container">
+    <h2 id="sign-up">Sign Up</h2>
+    <form action="" id="signup-form">
+    <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit">Sign Up</button> 
+    </form>
+    </div>
+    <div class="container" id="content-container" style="display:none;">
+    <h1 class="mission">Our Mission</h1>
+    <ul class="cricket-content">
+    <li>Provide high-quality cricket content, including news, analysis, and insights.</li>
+    <li>Create a vibrant community where cricket enthusiasts can connect, share their passion, and engage in meaningful discussions.</li>
+    <li>Offer resources and support for players of all levels to improve their skills and enjoy the game to the fullest. </li>
+    </ul>
+    </div>  
+    <footer class="footer">
+       <p>&copy; Landing page. All rights reserved.</p> 
+    </footer>
+    <script>
+        document.getElementById('signup-form').addEventListener('submit',function(event) {
+            event.preventDefault();
+            document.getElementById('signup-container').style.display='none';
+            document.getElementById('content-container').style.display='block';
+        });
+    </script> 
+</body>
+</html>
