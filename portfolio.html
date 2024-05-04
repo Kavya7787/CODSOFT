@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .logo {
+            display: flex;
+        }
+        .pf {
+            width: 30px;
+            height: 30px;
+            border: 2px solid blue;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .name {
+            color: white;
+            font-size: 100%;
+            margin-top: 30px;
+            margin-left: 10px;
+            display: flex;
+        }
+        .Headings {
+            display:flex;
+            font-size: 100%;
+        }
+        .Headings:visited {
+            color:white;
+        }
+        .Headings:hover {
+            color:orange
+        }
+        .Headings1 {
+            margin-left: 300px;
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(43, 137, 226);
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px;
+        }
+        .Headings2 {
+            margin-left:50px;
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(43, 137, 226);
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px;
+        }
+        .Headings3 {
+            margin-left:50px;
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(43, 137, 226);
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px;
+        }
+        .Headings4 {
+            margin-left:50px;
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(43, 137, 226);
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px;
+        }
+        .Headings5 {
+            margin-left:50px;
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(43, 137, 226);
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px;
+        }
+        #intro {
+            margin-top: 100px;
+            color:white;
+            margin-left: 100px;
+            font-size: 50px;
+        }
+        .frontend {
+            color: white;
+            margin-left: 100px;
+            font-size: 150%;
+        }
+        @keyframes flash {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity:0;
+            }
+            100% {
+                opacity:1;
+            }
+        }
+        .blink {
+            color: purple;
+            animation:flash 1s infinite;  
+        }
+        .objective {
+            max-width: 400px;
+            margin-left: 100px;
+            text-align: justify;
+            color: gray;
+        }
+        .link {
+            margin-left: 100px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: blueviolet;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .content {
+            display: flex;
+        }
+        .my-img {
+            margin-left: 100px;
+            width: 200px;
+            height: 200px;
+            border: 2px solid blue;
+            border-radius: 60%;
+        }
+        #s {
+            text-align: center;
+            color: white;
+            font-size: 300%;
+            margin-top: 50px;
+        }
+        .hello {
+            display: flex;
+        }
+        .main {
+            display: flex;
+            display: inline-block;
+            width: 440px;
+            height: 270px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            margin-left: 150px;    
+        }
+        .front {
+            padding-left: 120px;
+            font-size: 30px;
+            color: white;    
+        }
+        .developer {
+            display: flex;
+        }
+        .s1 {
+            display: flex;
+            color: white;
+            width: 120px;
+            height: 50px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+        .html {
+            width: 30px;
+            height:30px;
+            margin-left: 10px;
+            margin-top: 10px;  
+        }
+        .hyper {
+            display: flex;
+            font-size: 15px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        .s2 {
+            display: flex;
+            color: white;
+            width: 120px;
+            height: 50px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+        .css {
+            width: 30px;
+            height:30px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: flex;
+        }
+        .design {
+            display: flex;
+            font-size: 15px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        .s3 {
+            display: flex;
+            color: white;
+            width: 140px;
+            height: 50px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+        .javascript {
+            width: 30px;
+            height:30px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: flex;
+        }
+        .js {
+            display: flex;
+            font-size: 15px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        .developer1 {
+            display: flex;
+        }
+        .s4 {
+            display: flex;
+            color: white;
+            width: 130px;
+            height: 50px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        .react {
+            width: 30px;
+            height:30px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: flex;
+        }
+        .reactjs {
+            display: flex;
+            font-size: 15px;
+            margin-left: 10px;
+            margin-top: 15px;
+        }
+        .s5 {
+            display: flex;
+            color: white;
+            width: 140px;
+            height: 50px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        .bootstrap {
+            width: 30px;
+            height:30px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: flex;
+        }
+        .boot {
+            display: flex;
+            font-size: 15px;
+            margin-left: 10px;
+            margin-top: 15px;
+        }
+        .main1 {
+            display: flex;
+            width: 440px;
+            height: 270px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            margin-left: 100px;
+            
+        }
+        .others {
+            padding-left: 150px;
+            font-size: 30px;
+            color: white;   
+        }
+        .developer2 {
+            display: flex;
+        }
+        .s6 {
+            display: flex;
+            color: white;
+            width: 120px;
+            height: 50px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+
+        .git {
+            width: 30px;
+            height:30px;
+            margin-left: 10px;
+            margin-top: 10px;     
+        }
+        .gt {
+            display: flex;
+            font-size: 15px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        .s7 {
+            display: flex;
+            color: white;
+            width: 120px;
+            height: 50px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+
+        .github {
+            width: 30px;
+            height:30px;
+            margin-left: 10px;
+            margin-top: 10px;
+            
+        }
+        .gb {
+            display: flex;
+            font-size: 15px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        .s8 {
+            display: flex;
+            color: white;
+            width: 130px;
+            height: 50px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+
+        .visual-studio {
+            width: 30px;
+            height:30px;
+            margin-left: 10px;
+            margin-top: 10px;
+            
+        }
+        .vs {
+            display: flex;
+            font-size: 15px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }    
+        .Skill {
+            margin-left: 50px;
+            color: purple;
+        }
+         #visionary {
+            text-align: center;
+            color: white;
+            font-size: 300%;
+            margin-top: 100px;
+        }
+        .career {
+            color: gray;
+            text-align: center;
+        }
+        .personalisation {
+            display: flex;
+            display: inline-block;
+            width: 470px;
+            height: 200px;
+            border: 2px solid darkgray;
+            border-radius: 5px;
+            margin-left: 410px;  
+            margin-top: 15px;  
+        }
+        .h4 {
+            color: white;
+            font-size: 14px;
+            padding-left: 10px;   
+        }
+        .change {
+            color: gray;
+            font-size: 12px;
+            
+        }
+        .point {
+            color:gray;
+            padding-left: 10px;
+            text-align: justify;
+            width: 450px;
+            font-size: 13px;
+        }
+        .hire {
+            display: flex;
+            display: inline-block;
+            width: 470px;
+            height: 200px;
+            border: 2px solid darkgray;
+            border-radius: 5px;
+            margin-left: 410px;  
+            margin-top: 15px;  
+        }
+        .reason {
+            color: white;
+            font-size: 14px;
+            padding-left: 10px;   
+        }
+        .change1 {
+            color: gray;
+            font-size: 12px;   
+        }
+        .goal {
+            color:gray;
+            padding-left: 10px;
+            text-align: justify;
+            width: 450px;
+            font-size: 13px;
+        }
+        #project {
+            text-align: center;
+            color: white;
+            font-size: 300%;
+            margin-top: 100px;
+        }
+        .few-projects {
+            color: gray;
+            text-align: center;
+        }
+        .code {
+            padding-left: 10px;
+            font-size: 12px;
+        }
+        .web {
+            padding-left: 10px;
+            font-size: 12px;
+        }
+        .ping {
+            display: flex;
+            display: inline-block;
+            width: 300px;
+            height: 400px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            margin-left: 300px;  
+            margin-top: 20px;     
+        }
+        .ping-pong {
+            width: 300px;
+            height: 200px;
+            border: none;    
+        }
+        .pong {
+            color: white;
+            padding-left: 10px;
+        }
+        .date {
+            color: gray;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        .points {
+            color:gray;
+            font-size: 12px;
+            padding-left: 10px;
+            width: 300px;
+        }
+        .score {
+            font-weight: bold;
+        }
+        .landing {
+            display: flex;
+            display: inline-block;
+            width: 300px;
+            height: 400px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            margin-left: 100px;  
+            margin-top: 20px; 
+            
+        }
+        .landing-page {
+            width: 300px;
+            height: 200px;
+            border: none;    
+        }
+        #education {
+            text-align: center;
+            color: white;
+            font-size: 300%;
+            margin-top: 100px;
+        }
+        .edu {
+            color: gray;
+            text-align: center;
+        }
+        .edu-details {
+            display: flex;
+            display: inline-block;
+            width: 500px;
+            height: 280px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            margin-left: 400px;  
+            margin-top: 20px;    
+        }
+        .prep {
+            color: white;
+            padding-left: 10px;
+        }
+        .mastery {
+            color: gray;
+            font-size: 13px;
+        }
+        .fd-year {
+            color: gray;
+            font-size: 13px;
+        }
+        .grade {
+            color:gray;
+            font-size: 13px;
+            padding-left: 10px;
+        }
+        .span {
+            font-weight: bold;
+        }
+        .course {
+            color:gray;
+            max-width: 480px;
+            text-align: justify;
+            padding-left: 10px;
+            font-size: 13px;
+        }
+        .college {
+            display: flex;
+            display: inline-block;
+            width: 500px;
+            height: 280px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            margin-left: 400px;  
+            margin-top: 20px;    
+        }
+        .mcet {
+            color: white;
+            padding-left: 10px;
+        }
+        .be {
+            color: gray;
+            font-size: 13px;
+        }
+        .mcet-year {
+            color: gray;
+            font-size: 13px;
+        }
+        .EEE {
+            color:gray;
+            max-width: 480px;
+            text-align: justify;
+            padding-left: 10px;
+            font-size: 13px;
+        }
+        .HSC {
+            display: flex;
+            display: inline-block;
+            width: 500px;
+            height: 210px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            margin-left: 400px;  
+            margin-top: 20px;    
+        }
+         .pghss {
+            color: white;
+            padding-left: 10px;
+        }
+        .higher {
+            color: gray;
+            font-size: 13px;
+        }
+        .pghss-year {
+            color: gray;
+            font-size: 13px;
+        }
+        .HSC-obj {
+            color:gray;
+            max-width: 480px;
+            text-align: justify;
+            padding-left: 10px;
+            font-size: 13px;
+        }
+        .tenth {
+            display: flex;
+            display: inline-block;
+            width: 500px;
+            height: 210px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            margin-left: 400px;  
+            margin-top: 20px;  
+        }
+        .gkn {
+            color: white;
+            padding-left: 10px;
+        }
+        .ten {
+            color: gray;
+            font-size: 13px;
+        }
+        .gkn-year {
+            color: gray;
+            font-size: 13px;
+        }
+        .sslc-obj {
+            color:gray;
+            max-width: 480px;
+            text-align: justify;
+            padding-left: 10px;
+            font-size: 13px;
+        }
+        #contact {
+            text-align: center;
+            color: white;
+            font-size: 300%;
+            margin-top: 100px;
+        }
+        .gmail {
+            width:30px;
+            height: 30px;
+            margin-left: 300px;
+            margin-top: 10px;
+        }
+        .contacts {
+            display: flex; 
+        }
+        .mail {
+            margin-left: 10px;
+            margin-top: 15px;
+        }
+        .phone {
+            width:30px;
+            height: 30px;
+            margin-left: 200px;
+            margin-top: 10px;
+        }
+        .number {
+            color: gray;
+            font-size: 15px;
+            margin-left: 10px;
+            margin-bottom: ;
+        }
+        .footer {
+            text-align: right;
+            color: white;
+        }
+    </style>
+</head>
+<body>    
+    <div class="Headings">
+        <div class="logo">
+        <img src="Images/pf img.jpeg" alt="" class="pf">
+        <h1 class="name">Portfolio</h1>
+        </div>
+        <a href="#intro" class="Headings1">About</a>
+        <a href="#s" class="Headings2">Skills</a>
+        <a href="#visionary" class="Headings3">Visionary</a>
+        <a href="#project" class="Headings4">Projects</a>
+        <a href="#education" class="Headings5">Education</a> 
+    </div>
+    <h2 id="intro">Hi, I am Kavya S</h2>
+    <h3 class="frontend">I am a <span class="blink">Front End Developer</span></h3>
+        <div class="content">
+            <p class="objective">As a dedicated and innovatve Full stack/Front End Software Engineer, I bring a robust skill set in JavaScript, React, HTML and CSS, Python, Java combined with experience in developing responsive web applications. Proficient in collaborating within dynamic teams, I am driven by a passion for creating intuitive user interfaces and leveraging cutting-edge technologies to deliver impactful solutions, Eager to contribute my problem-solving abilities and adaptability to drive excellence in software development. </p>
+            <img src="Images/kavya img.jpeg" alt="" class="my-img">
+        </div>
+        <a href="https://drive.google.com/file/d/1dRzuSNbrjM9Og7QXZDss3VYxU8LOiRYb/view?usp=sharing" class="link">Check Resume</a>
+        <h2 id="s">Skills</h2>
+        <div class="hello">
+            <div class="main">
+                <div id="frontend">
+                    <h3 class="front">Frontend</h3>
+                    <div class="developer">
+                        <div class="s1">
+                            <img src="Images/HTML img.png" alt="" class="html">
+                            <p class="hyper">HTML</p>
+                        </div>
+                        <div class="s2">
+                            <img src="Images/css-3.png" alt="" class="css">
+                            <p class="design">CSS</p>
+                        </div>
+                        <div class="s3">
+                            <img src="Images/javascript-39395.png" alt="" class="javascript">
+                            <p class="js">JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="developer1">
+                        <div class="s4">
+                            <img src="Images/React img.png" alt="" class="react">
+                            <p class="reactjs">React.Js</p>
+                        </div>
+                        <div class="s5">
+                            <img src="Images/bootstrap-logo.png" alt="" class="bootstrap">
+                            <p class="boot">Bootstrap</p>
+                        </div>
+                    </div>
+            </div>    
+            </div>
+            <div class="main1">
+                <div class="frontend1">
+                    <h3 class="others">Others</h3>
+                    <div class="developer2">
+                        <div class="s6">
+                            <img src="Images/git img.png" alt="" class="git">
+                            <p class="gt">Git</p>
+                        </div>
+                        <div class="s7">
+                            <img src="Images/github-6980894_640.png" alt="" class="github">
+                            <p class="gb">Github</p>
+                        </div>
+                        <div class="s8">
+                            <img src="Images/pngegg.png" alt="" class="visual-studio">
+                            <p class="vs">Vs code</p>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 id="visionary">Visionary</h2>
+        <p class="career">Launching My career:A fresh perspective on Front-End Engineer</p>
+        <div class="personalisation">
+             <h4 class="h4">Personalisation <br> <span class="change">A glimpse of my individuality</span> </h4>
+            <p class="point">As a budding front-end virtuoso, I'm fervently dedicated to crafting web experiences that transcend the ordinary, infusing every pixel with elegance and enchantment. My unwavering passion for unraveling intricate challenges fuels my odyssey in the realm of front-end wizardry. The prospect of harmonizing with a dynamic ensemble, while imbibing wisdom from industry sages, thrills me as i amplify my proficiencies in this ever-mutating domain.</p>
+        </div>
+        <div class="hire">
+            <h4 class="reason">Reason to hire me <br> <span class="change1">What sets me apart</span> </h4>
+            <p class="goal">Aspiring Frontend developer passionate about crafting exceptional user experiences. I bring fresh perspectives, boundlessmambition, and unconventional thinking to every project. My goal is to create digital magic through energetic, innovation work. Let's connect and embark on a journey to bring unique, ambitious, and engaging experiences to life.</p>
+        </div>
+        <h2 id="project">Projects</h2>
+        <p class="few-projects">I have worked on a wide range of projects. Here are some of my projects</p>
+        <div class="project-content">
+            <div class="ping">
+                <img src="Images/ping pong img.jpeg" alt="" class="ping-pong">
+                <div class="code-check">
+                <a href="https://github.com/Kavya7787/Pingpong" class="code">Code page</a>
+                <a href="file:///C:/Users/ADMIN/Desktop/pingpong%20project/index.html" class="web"> Website</a>
+                </div>
+                <h4 class="pong">Ping pong Game <br> <span class="date">2023</span> </h4>
+                <div class="points">
+                    <li>This project is concrned with the creation of an game called ping pong.</li>
+                    <li>This project is done using HTML,CSS,JavaScript.</li>
+                    <li> <span class="score">Scoring system:</span>Track and update scores based on ball intractions with paddles. </li>
+                </div>
+            </div>
+            <div class="landing">
+                <img src="Images/landing page.jpeg" alt="" class="landing-page">
+                <div class="code-check">
+                <a href="" class="code">Code page</a>
+                <a href="file:///C:/Users/ADMIN/Desktop/Landing%20page/page.html" class="web"> Website</a>
+                </div>
+                <h4 class="pong">Sports Landing Page <br> <span class="date">2024</span> </h4>
+                <div class="points">
+                    <li>Developed a dynamic sports landing page called cricketZone.</li>
+                    <li>This project is done using HTML,CSS,JavaScript.</li>
+                    <li> Designed a clean and minimalistic layout to highlight key information about the page. </li>
+                </div>
+            </div>
+        </div>
+        <h2 id="education">Education</h2>
+        <p class="edu">My education has been a journey of self-discovery and growth.My educational details are as follows</p>
+        <div class="edu-details">
+            <h4 class="prep">PrepInst Tchnologies Private LTD <br> <span class="mastery">Frontend development mastery along with react.js </span> <br> <span class="fd-year">2023 - present</span>
+             </h4>
+             <p class="grade"> <span class="span">Grade: </span>A+</p>
+             <p class="course">With a comprehensive front-end development course under my belt, I've cultivated expertise in HTML, CSS, and JavaScript.This educational journey has empowered me to craft visually captivating responsive websites and dynamc web applications. Complementing this, I've refined my abilities through hands-on projects using react.js, a powerful tool for contemporary web development, these experiences have enriched my understanding of front-end development.lgniting my passion to design user-centric and captivating digital solutions.</p>
+        </div>
+        <div class="college">
+            <h4 class="mcet">Dr.Mahalingam College of Engineering and Technology <br> <span class="be">Bachelor of Engineering - BE, Electrical and Electronics Engineering </span> <br> <span class="mcet-year">2019 - 2023</span>
+             </h4>
+             <p class="grade"> <span class="span">CGPA: </span>8.8</p>
+             <p class="EEE">As a Electrical and Electronics Engineering graduate, I possess strong problem-solving and precision skills. Combining this foundation with my passion for technology. I'm venturing into IT. My college experience has equipped me to bridge the worlds of engineering and IT, applying efficiency and innovation to both making me a versatile professional.</p>
+        </div>
+        <div class="HSC">
+            <h4 class="pghss">Palanigounder Higher Secondary School <br> <span class="higher">HSC-XI,XII(std) (Computer Science)</span> <br> <span class="pghss-year">2017 - 2019</span>
+             </h4>
+             <p class="grade"> <span class="span">Percentage: </span>74%</p>
+             <p class="HSC-obj">I've embraced a dynamic academic journey. My studies have fastered critical thinking and a thirst for knowledge. Through my dedication and adaptability, I've honed essential skills that transcend disciplines, preparing me for future challenges and opportunities.</p>
+        </div>
+        <div class="tenth">
+            <h4 class="gkn">G K N Higher Secondary School <br> <span class="ten">SSLC-Xth(std)</span> <br> <span class="gkn-year">2016 - 2017</span>
+             </h4>
+             <p class="grade"> <span class="span">Percentage: </span>91%</p>
+             <p class="sslc-obj">I embarked on my educational journey with enthusiasm. This pivotal year instilled a strong foundation in essential subjects and time management.It was a crucial step toward my academic and personal develpment, preparing me for the roard ahead.</p>
+        </div>
+        <h2 id="contact">Contacts</h2>
+        <div class="contacts">
+            <img src="Images/gmail_5968534.png" alt="" class="gmail">
+            <a href="mailto:kavyashanmugavadivel@gmail.com" class="mail">kavyashanmugavadivel@gmail.com</a>
+            <img src="Images/pngwing.com.png" alt="" class="phone">
+            <p class="number">+91 9361165683</p>
+        </div>
+        <footer class="footer">
+            <p>&copy; page. All rights reserved.</p> 
+         </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+        
+</body>
+</html>
